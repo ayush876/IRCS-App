@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/optical"
+            android:paddingBottom="15dp"/>
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/headland_one"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text="About Optical Centre"
+            android:textAllCaps="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:text="•    The Red Cross Optical centre was established in the year 1987."
+            android:textColor="#7E2727" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:text="•    It is located in the Minto Hospital Premises, Chamarajpet, Bangalore."
+            android:textColor="#7E2727" />
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:text="•    Their main aim is to distribute spectacles at subsidised prices or for free to the underprivileged."
+            android:textColor="#7E2727" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:text="•    Through a survey, it was seen that 7436 customers have visited the Unit during 2013-1 and 7219 spectacle units have been issued during 2013-14."
+            android:textColor="#7E2727" />
+
+        <com.codesgood.views.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:text="•    Many screening camps have been organised in various schools."
+            android:textColor="#7E2727" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:clickable="true"
+            android:fontFamily="@font/allerta"
+            android:paddingLeft="20dp"
+            android:paddingTop="25dp"
+            android:text="Contact No. - 26704322" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/allerta"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="Address - New Tharagupet, Bengaluru, Karnataka 560002" />
+
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="15dp"
+            android:clickable="true"
+            android:src="@drawable/optical_location" />
+
+    </LinearLayout>
+</ScrollView>

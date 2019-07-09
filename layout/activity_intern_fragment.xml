@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Custom_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#F2372C"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:text="Apply for Internship"
+            android:textColor="#d9e5f3"
+            android:textSize="23dp" />
+        <ImageView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/internship"/>
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/fname"
+                android:textColorHint="#A0A19F"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:textSize="20dp"
+
+                android:layout_weight="1"/>
+            <EditText
+                android:textColorHint="#A0A19F"
+                android:id="@+id/lname"
+                android:layout_marginTop="30dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/mn"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#A0A19F"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No."/>
+        <EditText
+            android:id="@+id/amn"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="10dp"
+            android:textColorHint="#A0A19F"
+
+
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Alternate Mobile No."/>
+        <EditText
+            android:id="@+id/age"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Age"/>
+        <EditText
+            android:id="@+id/dob"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Date of birth"
+            android:inputType="date"/>
+
+        <EditText
+            android:id="@+id/pa"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Permanent Address"
+            />
+        <EditText
+            android:id="@+id/email"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=" Email"
+            />
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textColor="#A0A19F"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:text="District : "/>
+            <Spinner
+                android:id="@+id/district"
+                android:layout_marginTop="10dp"
+                android:entries="@array/states"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/q1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:hint=" Why do you want to do your internship at Red Cross?"
+            android:scrollbars="vertical"
+            />
+        <EditText
+            android:id="@+id/q2"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:hint=" How well do you know Red Cross?"
+            android:scrollbars="vertical"
+            />
+
+        <EditText
+            android:id="@+id/q3"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:hint=" What is your experience with Red Cross?"
+            android:scrollbars="vertical"
+            />
+        <EditText
+            android:id="@+id/q4"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:hint=" After Interning with Red Corss, how will you engage yourslef with Red Cross??"
+            android:scrollbars="vertical"
+            />
+        <EditText
+            android:id="@+id/q5"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:minLines="1"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="6"
+            android:hint="What are your future goals?"
+            android:scrollbars="vertical"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="#F2372C"
+            android:onClick="internRegister"
+            android:text="Submit Application"
+            android:textColor="#d9e5f3" />
+
+    </LinearLayout>
+
+
+</ScrollView>
